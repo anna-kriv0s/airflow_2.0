@@ -1,13 +1,7 @@
-import requests
-from zipfile import ZipFile
-from io import BytesIO
 import pandas as pd
 import numpy as np
 from datetime import timedelta
 from datetime import datetime
-from io import StringIO
-import telegram
-
 from airflow.decorators import dag, task
 from airflow.operators.python import get_current_context
 from airflow.models import Variable
